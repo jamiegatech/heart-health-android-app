@@ -31,6 +31,23 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+//Crediting the following websites for assistance with code or direct use:
+
+//https://stuff.mit.edu/afs/sipb/project/android/docs/guide/topics/ui/controls/text.html
+//https://developer.android.com/about/versions/nougat/android-7.0.html#apk_signature_v2
+//https://www.baeldung.com/spring-boot-configure-data-source-programmatic
+//https://code.tutsplus.com/tutorials/android-essentials-creating-simple-user-forms--mobile-1758 This one especially helped me get started.
+//https://www.tutorialspoint.com/android/android_network_connection.htm this one helped with file saving and opening
+//https://developer.android.com/training/data-storage this also helped with file saving and storing
+//https://www.androidauthority.com/how-to-store-data-locally-in-android-app-717190/ this also helped with saving file and storing
+//https://www.tutorialspoint.com/android/android_internal_storage.htm this also helped with saving file and storing
+
+//https://howtodoinjava.com/java8/secure-random-number-generation/ secure random number generation
+//https://developer.android.com/training/data-storage/app-specific app specific storage access help
+
+//https://stackoverflow.com/questions/15496278/httpurlconnection-is-throwing-exception very important for creating connections to do POST call.
+
+
 public class MainActivity extends AppCompatActivity {
     public static ArrayList<MetricDto> metrics;
     public static ProfileDto profile;
