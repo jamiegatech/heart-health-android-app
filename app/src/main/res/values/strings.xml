@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Heart Health Tracker</string>
+
+    <string name="title_profile">Profile</string>
+    <string name="profile_name">Name</string>
+    <string name="profile_height">Height (cm)</string>
+    <string name="profile_age">Age (years)</string>
+
+    <string name="title_dashboard">Dashboard</string>
+    <string name="dashboard_average">Average</string>
+    <string name="dashboard_goal">Goal</string>
+    <string name="dashboard_weight">Weight</string>
+    <string name="dashboard_sleep">Sleep</string>
+    <string name="dashboard_food">Food</string>
+    <string name="dashboard_activity">Activity</string>
+    <string name="dashboard_blood_pressure">Blood Pressure</string>
+
+    <string name="title_add_metric">Add Metric</string>
+    <string name="add_metric_save">Save</string>
+    <string name="add_metric_clear">Clear</string>
+
+    <string name="add_metric_weight">Weight</string>
+    <string name="add_metric_blood_pressure">Blood Pressure</string>
+    <string name="add_metric_systolic">Systolic</string>
+    <string name="add_metric_diastolic">Diastolic</string>
+
+    <string name="add_metric_sleep_hrs">Sleep (Hr)</string>
+    <string name="add_metric_sleep_quality">Sleep Quality</string>
+
+    <string name="add_metric_food_quality">Food Quality</string>
+    <string name="add_metric_activity">Activity (Min)</string>
+    <string name="add_metric_activity_quality">Activity Quality</string>
+
+</resources>

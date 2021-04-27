@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <TextView
+        android:id="@+id/title_dashboard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/title_dashboard"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dashboard_BMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="2dp"
+        android:text="BMI"
+        app:layout_constraintBottom_toBottomOf="@+id/trend_bmi"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/dashboard_blood_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="B.P."
+        app:layout_constraintStart_toStartOf="@+id/dashboard_BMI"
+        app:layout_constraintTop_toBottomOf="@+id/dashboard_BMI" />
+
+    <TextView
+        android:id="@+id/dashboard_sleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sleep"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_blood_pressure"
+        app:layout_constraintTop_toBottomOf="@+id/dashboard_blood_pressure" />
+
+    <TextView
+        android:id="@+id/dashboard_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Activity"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_blood_pressure"
+        app:layout_constraintStart_toEndOf="@+id/dashboard_blood_pressure"
+        app:layout_constraintTop_toBottomOf="@+id/dashboard_sleep" />
+
+    <TextView
+        android:id="@+id/dashboard_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Food"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_activity"
+        app:layout_constraintTop_toBottomOf="@+id/dashboard_activity" />
+
+    <TextView
+        android:id="@+id/goal_BMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="bmi goal"
+        app:layout_constraintBottom_toTopOf="@+id/goal_blood_pressure"
+        app:layout_constraintStart_toStartOf="@+id/goal_blood_pressure" />
+
+    <TextView
+        android:id="@+id/goal_blood_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:text="below 135/85"
+        app:layout_constraintBottom_toTopOf="@+id/goal_activity"
+        app:layout_constraintStart_toStartOf="@+id/goal_sleep" />
+
+    <TextView
+        android:id="@+id/goal_sleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="8 hr (high)"
+        app:layout_constraintStart_toStartOf="@+id/goal_activity"
+        app:layout_constraintTop_toBottomOf="@+id/goal_blood_pressure" />
+
+    <TextView
+        android:id="@+id/goal_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="2dp"
+        android:text="above 30 min (high)"
+        app:layout_constraintBottom_toBottomOf="@+id/trend_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_activity" />
+
+    <TextView
+        android:id="@+id/goal_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="high quality"
+        app:layout_constraintStart_toStartOf="@+id/goal_activity"
+        app:layout_constraintTop_toBottomOf="@+id/goal_activity" />
+
+
+    <TextView
+        android:id="@+id/dashboard_trends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="18dp"
+        android:text="Tends"
+        app:layout_constraintStart_toStartOf="@+id/trend_bmi"
+        app:layout_constraintTop_toBottomOf="@+id/title_dashboard" />
+
+    <TextView
+        android:id="@+id/trend_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="13dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/trend_activity"
+        app:layout_constraintTop_toBottomOf="@+id/trend_activity" />
+
+    <TextView
+        android:id="@+id/trend_blood_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/trend_bmi"
+        app:layout_constraintTop_toBottomOf="@+id/trend_bmi" />
+
+    <TextView
+        android:id="@+id/trend_sleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/trend_blood_pressure"
+        app:layout_constraintTop_toBottomOf="@+id/trend_blood_pressure" />
+
+    <TextView
+        android:id="@+id/trend_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/trend_sleep"
+        app:layout_constraintTop_toBottomOf="@+id/trend_sleep" />
+
+    <TextView
+        android:id="@+id/trend_bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/dashboard_BMI"
+        app:layout_constraintTop_toBottomOf="@+id/dashboard_trends" />
+
+    <TextView
+        android:id="@+id/dashboard_goals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Goals"
+        app:layout_constraintBottom_toTopOf="@+id/goal_BMI"
+        app:layout_constraintStart_toStartOf="@+id/goal_BMI" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="7dp"
+        android:text="Positive trends appear green."
+        android:textColor="#32CD32"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="197dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="84dp"
+        android:text="No change appears grey."
+        android:textColor="#696969"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="2dp"
+        android:text="Negative trends appear red."
+        android:textColor="#D51A1A"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

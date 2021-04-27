@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.metrics.AddMetricsFragment">
+
+    <TextView
+        android:id="@+id/title_add_metric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/title_add_metric"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/add_metric_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:ems="10"
+        android:hint="@string/add_metric_weight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/add_metric_systolic"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="164dp"
+        android:ems="10"
+        android:hint="@string/add_metric_systolic"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/add_metric_diastolic"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="164dp"
+        android:ems="10"
+        android:hint="@string/add_metric_diastolic"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/add_metric_sleep_hrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="244dp"
+        android:ems="10"
+        android:hint="@string/add_metric_sleep_hrs"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/add_metric_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="304dp"
+        android:ems="10"
+        android:hint="@string/add_metric_activity"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/add_metric_sleep_quality"
+        android:layout_width="109dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="376dp"
+        android:text="@string/add_metric_sleep_quality"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/add_metric_food_quality_group"
+        android:layout_width="217dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="412dp"
+        android:checkedButton="@+id/food_low"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.731"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/food_low"
+            android:layout_width="65dp"
+            android:layout_height="33dp"
+            android:text="low"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <RadioButton
+            android:id="@+id/food_neutral"
+            android:layout_width="85dp"
+            android:layout_height="33dp"
+            android:text="neutral"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.655"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+           />
+
+        <RadioButton
+            android:id="@+id/food_high"
+            android:layout_width="65dp"
+            android:layout_height="33dp"
+            android:text="high"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.949"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/add_metric_food_quality"
+        android:layout_width="109dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="416dp"
+        android:text="@string/add_metric_food_quality"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/add_metric_activity_quality_group"
+        android:layout_width="217dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="452dp"
+        android:checkedButton="@+id/activity_low"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.731"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/activity_low"
+            android:layout_width="65dp"
+            android:layout_height="33dp"
+            android:text="low"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/activity_neutral"
+            android:layout_width="85dp"
+            android:layout_height="33dp"
+            android:text="neutral"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.655"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/activity_high"
+            android:layout_width="65dp"
+            android:layout_height="33dp"
+            android:text="high"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.949"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/add_metric_activity_quality"
+        android:layout_width="121dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="456dp"
+        android:text="@string/add_metric_activity_quality"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/add_metric_sleep_quality_group"
+        android:layout_width="217dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="372dp"
+        android:checkedButton="@+id/sleep_low"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.731"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/sleep_low"
+            android:layout_width="65dp"
+            android:layout_height="33dp"
+            android:text="low"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/sleep_neutral"
+            android:layout_width="85dp"
+            android:layout_height="33dp"
+            android:text="neutral"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.655"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/sleep_high"
+            android:layout_width="65dp"
+            android:layout_height="33dp"
+            android:text="high"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.949"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/add_metric_blood_pressure"
+        android:layout_width="58dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="172dp"
+        android:text="@string/add_metric_blood_pressure"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/add_metric_sleep_hrs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/add_metric_save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="504dp"
+        android:text="@string/add_metric_save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="metricSaveButton"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
