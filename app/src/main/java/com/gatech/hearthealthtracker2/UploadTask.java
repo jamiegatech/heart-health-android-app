@@ -15,8 +15,8 @@ import java.net.ProtocolException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-
-
+//this code was entirely a product of the stack overflow post, with my own alterations on top. giving them credit for it. 
+//https://stackoverflow.com/questions/15496278/httpurlconnection-is-throwing-exception
 public class UploadTask extends AsyncTask<Void, Void, Void>
 {
     @Override
