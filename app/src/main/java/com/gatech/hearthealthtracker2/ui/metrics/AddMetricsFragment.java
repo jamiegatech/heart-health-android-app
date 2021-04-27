@@ -25,7 +25,9 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-
+//the fragment and XML that accompanies this was helped by the code found here:
+//https://code.tutsplus.com/tutorials/android-essentials-creating-simple-user-forms--mobile-1758
+//couldnt of done it without their instructions, especially in the beginning.
 import static android.content.Context.MODE_PRIVATE;
 
 public class AddMetricsFragment extends Fragment {
